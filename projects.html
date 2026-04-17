@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2 data-aos="zoom-in" data-aos-duration="1200">Mashilo's <span>Portfolio</span></h2>
+        </div>
+        <div class="link">
+            <ul>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><a href="index.html#bio">Bio</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><a href="about.html">About Me</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"><a href="skills.html">Skills</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800"><a href="projects.html">Projects</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="projects">
+        <div class="projects-header" data-aos="fade-up" data-aos-duration="1200">
+            <h2>My Projects</h2>
+            <p>Explore a selection of my recent projects showcasing my skills in web development, design, and problem-solving.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+                <div class="project-slider">
+                    <div class="slide-container" id="slider-1">
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrows">
+                        <button class="arrow" onclick="prevSlide('slider-1')"><i class="bx bx-chevron-left"></i></button>
+                        <button class="arrow" onclick="nextSlide('slider-1')"><i class="bx bx-chevron-right"></i></button>
+                    </div>
+                    <div class="slider-controls">
+                        <span class="dot active" onclick="currentSlide(0, 'slider-1')"></span>
+                        <span class="dot" onclick="currentSlide(1, 'slider-1')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slider-1')"></span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, and payment integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Code</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+                <div class="project-slider">
+                    <div class="slide-container" id="slider-2">
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrows">
+                        <button class="arrow" onclick="prevSlide('slider-2')"><i class="bx bx-chevron-left"></i></button>
+                        <button class="arrow" onclick="nextSlide('slider-2')"><i class="bx bx-chevron-right"></i></button>
+                    </div>
+                    <div class="slider-controls">
+                        <span class="dot active" onclick="currentSlide(0, 'slider-2')"></span>
+                        <span class="dot" onclick="currentSlide(1, 'slider-2')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slider-2')"></span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A responsive weather application that provides real-time weather data, forecasts, and geolocation features. Built with vanilla JavaScript and OpenWeather API.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Code</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+                <div class="project-slider">
+                    <div class="slide-container" id="slider-3">
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrows">
+                        <button class="arrow" onclick="prevSlide('slider-3')"><i class="bx bx-chevron-left"></i></button>
+                        <button class="arrow" onclick="nextSlide('slider-3')"><i class="bx bx-chevron-right"></i></button>
+                    </div>
+                    <div class="slider-controls">
+                        <span class="dot active" onclick="currentSlide(0, 'slider-3')"></span>
+                        <span class="dot" onclick="currentSlide(1, 'slider-3')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slider-3')"></span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Task Management System</h3>
+                    <p>A collaborative task management tool with drag-and-drop functionality, team collaboration features, and real-time updates. Perfect for agile teams.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">UX Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Code</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="500">
+                <div class="project-slider">
+                    <div class="slide-container" id="slider-4">
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-placeholder">
+                                <i class="bx bx-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrows">
+                        <button class="arrow" onclick="prevSlide('slider-4')"><i class="bx bx-chevron-left"></i></button>
+                        <button class="arrow" onclick="nextSlide('slider-4')"><i class="bx bx-chevron-right"></i></button>
+                    </div>
+                    <div class="slider-controls">
+                        <span class="dot active" onclick="currentSlide(0, 'slider-4')"></span>
+                        <span class="dot" onclick="currentSlide(1, 'slider-4')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slider-4')"></span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Social Media Analytics</h3>
+                    <p>An analytics dashboard for social media metrics with advanced data visualization, trend analysis, and performance insights for content creators and brands.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Chart.js</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Code</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="weather-blocks">
+            <div class="weather-block" >
+                <i class="bx bx-current-location"></i>
+                <p id="weatherLocation">Detecting your location...</p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-cloud-lightning"></i>
+                <p id="weatherDescription"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-sun"></i>
+                <p id="weatherTemp"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-calendar"></i>
+                <p id="weatherDate"></p>
+            </div>
+        </div>
+    </footer>
+    <div id="scroll-buttons">
+        <button id="scroll-up"><i class="bx bx-chevron-up"></i></button>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+
+        let slideIndices = {
+            'slider-1': 0,
+            'slider-2': 0,
+            'slider-3': 0,
+            'slider-4': 0
+        };
+
+        function showSlide(sliderId, index) {
+            const slides = document.querySelectorAll(`#${sliderId} .slide`);
+            const dots = document.querySelectorAll(`#${sliderId.replace('slider-', 'dot-')} .dot`);
+            
+            if (index >= slides.length) slideIndices[sliderId] = 0;
+            if (index < 0) slideIndices[sliderId] = slides.length - 1;
+
+            slides.forEach(slide => slide.style.transform = 'translateX(0)');
+            const container = document.getElementById(sliderId);
+            container.style.transform = `translateX(-${slideIndices[sliderId] * 100}%)`;
+
+            document.querySelectorAll(`#${sliderId}`).forEach(slider => {
+                const sliderControls = slider.querySelector('.slider-controls');
+                if (sliderControls) {
+                    sliderControls.querySelectorAll('.dot').forEach((dot, i) => {
+                        dot.classList.toggle('active', i === slideIndices[sliderId]);
+                    });
+                }
+            });
+        }
+
+        function nextSlide(sliderId) {
+            slideIndices[sliderId]++;
+            showSlide(sliderId, slideIndices[sliderId]);
+        }
+
+        function prevSlide(sliderId) {
+            slideIndices[sliderId]--;
+            showSlide(sliderId, slideIndices[sliderId]);
+        }
+
+        function currentSlide(index, sliderId) {
+            slideIndices[sliderId] = index;
+            showSlide(sliderId, slideIndices[sliderId]);
+        }
+
+        // Scroll buttons
+        const scrollUpBtn = document.getElementById('scroll-up');
+        const scrollButtonsContainer = document.getElementById('scroll-buttons');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollButtonsContainer.classList.add('show');
+            } else {
+                scrollButtonsContainer.classList.remove('show');
+            }
+        });
+
+        scrollUpBtn.addEventListener('click', () => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

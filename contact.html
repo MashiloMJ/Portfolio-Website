@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2 data-aos="zoom-in" data-aos-duration="1200">Mashilo's <span>Portfolio</span></h2>
+        </div>
+        <div class="link">
+            <ul>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><a href="index.html#bio">Bio</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><a href="about.html">About Me</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"><a href="skills.html">Skills</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800"><a href="projects.html">Projects</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-header" data-aos="fade-up" data-aos-duration="1200">
+            <h2>Contact Me</h2>
+            <p>Get in touch with me via email, phone, WhatsApp, or Facebook Messenger.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+                <i class="bx bx-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:mashilohoneymakgotho@gmail.com">Mashilo@gmail.com</a></p>
+            </div>
+            <div class="contact-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+                <i class="bx bx-phone"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:+27723578441">+27 72 357 8441</a></p>
+            </div>
+            <div class="contact-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+                <i class="bx bxl-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/27723578441" target="_blank">+27 72 357 8441</a></p>
+            </div>
+            <div class="contact-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="500">
+                <i class="bx bxl-facebook-circle"></i>
+                <h3>Messenger</h3>
+                <p><a href="https://www.facebook.com/HoneyEmjay" target="_blank">HoneyEmjay</a></p>
+            </div>
+        </div>
+
+        <div class="qr-grid">
+            <div class="qr-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                <div class="qr-code">
+                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WhatsApp QR code placeholder">
+                        <rect width="120" height="120" fill="#111"/>
+                        <rect x="10" y="10" width="30" height="30" fill="#fff"/>
+                        <rect x="70" y="10" width="30" height="30" fill="#fff"/>
+                        <rect x="10" y="70" width="30" height="30" fill="#fff"/>
+                        <rect x="50" y="50" width="18" height="18" fill="#fff"/>
+                        <rect x="80" y="80" width="10" height="10" fill="#fff"/>
+                        <rect x="35" y="35" width="12" height="12" fill="#fff"/>
+                        <rect x="60" y="20" width="8" height="8" fill="#fff"/>
+                        <rect x="20" y="60" width="8" height="8" fill="#fff"/>
+                    </svg>
+                </div>
+                <h4>WhatsApp QR</h4>
+                <p>Scan to open the WhatsApp chat.</p>
+            </div>
+            <div class="qr-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+                <div class="qr-code">
+                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Messenger QR code placeholder">
+                        <rect width="120" height="120" fill="#111"/>
+                        <rect x="10" y="10" width="30" height="30" fill="#fff"/>
+                        <rect x="70" y="10" width="30" height="30" fill="#fff"/>
+                        <rect x="10" y="70" width="30" height="30" fill="#fff"/>
+                        <rect x="50" y="50" width="18" height="18" fill="#fff"/>
+                        <rect x="85" y="50" width="10" height="10" fill="#fff"/>
+                        <rect x="55" y="75" width="10" height="10" fill="#fff"/>
+                        <rect x="25" y="55" width="8" height="8" fill="#fff"/>
+                        <rect x="65" y="20" width="8" height="8" fill="#fff"/>
+                    </svg>
+                </div>
+                <h4>Messenger QR</h4>
+                <p>Scan to open the Messenger conversation.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="weather-blocks">
+            <div class="weather-block" >
+                <i class="bx bx-current-location"></i>
+                <p id="weatherLocation">Detecting your location...</p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-cloud-lightning"></i>
+                <p id="weatherDescription"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-sun"></i>
+                <p id="weatherTemp"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-calendar"></i>
+                <p id="weatherDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+    <div id="scroll-buttons">
+        <button id="scroll-up"><i class="bx bx-chevron-up"></i></button>
+        <button id="scroll-down"><i class="bx bx-chevron-down"></i></button>
+    </div>
+</body>
+</html>

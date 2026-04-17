@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashilo's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2 data-aos="zoom-in" data-aos-duration="1200">Mashilo's <span> Portfolio</span></h2>
+        </div>
+        <div class="link">
+            <ul>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><a href="index.html#bio">Bio</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><a href="about.html">About Me</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"><a href="skills.html">Skills</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800"><a href="projects.html">Projects</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bio" id="bio">
+        <div class="img-term" data-aos="zoom-out-right" data-aos-duration="2500"><img class="men" src="img/Mashilo1.PNG" alt="main-img"></div>
+        <div class="main-detail">
+            <p data-aos="fade-left" data-aos-duration="1200" data-aos-delay="1200">Hello I'm</p>
+            <h1 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1400">Mashilo Makgotho</h1>
+            <h4 data-aos="fade-in" data-aos-duration="1200" data-aos-delay="1600">Software Developer</h4>
+            <h5 data-aos="fade-in" data-aos-duration="1200" data-aos-delay="1700">I am a software developer with a passion for creating
+                 innovative and efficient solutions. With experience in various programming languages and frameworks, I am dedicated to 
+                 delivering high-quality code and collaborating effectively with teams to achieve project goals.</h5> 
+            <br>
+            <div class="btn">
+                <button id="downloadCv" class="btn-1" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-delay="1800">Download CV</button>
+                <button class="btn-2" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-delay="1800">Hire me</button>
+            </div>
+
+            <div class="social">
+                <i class="bx bxl-github" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="2000"></i>
+                <i class="bx bxl-instagram" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="2100"></i>
+                <i class="bx bxl-facebook" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="2200"></i>
+                <i class="bx bxl-linkedin" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="2300"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="weather-blocks">
+            <div class="weather-block" >
+                <i class="bx bx-current-location"></i>
+                <p id="weatherLocation">Detecting your location...</p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-cloud-lightning"></i>
+                <p id="weatherDescription"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-sun"></i>
+                <p id="weatherTemp"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-calendar"></i>
+                <p id="weatherDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+    <script>
+        // Scroll buttons functionality
+        const scrollButtons = document.getElementById('scroll-buttons');
+        const scrollUp = document.getElementById('scroll-up');
+        const scrollDown = document.getElementById('scroll-down');
+
+        function toggleScrollButtons() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            if (scrollTop > 100) {
+                scrollButtons.classList.add('show');
+            } else {
+                scrollButtons.classList.remove('show');
+            }
+
+            // Hide down button if at bottom
+            if (scrollTop + windowHeight >= documentHeight - 100) {
+                scrollDown.style.opacity = '0.5';
+                scrollDown.style.pointerEvents = 'none';
+            } else {
+                scrollDown.style.opacity = '1';
+                scrollDown.style.pointerEvents = 'auto';
+            }
+
+            // Hide up button if at top
+            if (scrollTop < 100) {
+                scrollUp.style.opacity = '0.5';
+                scrollUp.style.pointerEvents = 'none';
+            } else {
+                scrollUp.style.opacity = '1';
+                scrollUp.style.pointerEvents = 'auto';
+            }
+        }
+
+        scrollUp.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        scrollDown.addEventListener('click', () => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', toggleScrollButtons);
+        window.addEventListener('load', toggleScrollButtons);
+    </script>
+    <div id="scroll-buttons">
+        <button id="scroll-up"><i class="bx bx-chevron-up"></i></button>
+        <button id="scroll-down"><i class="bx bx-chevron-down"></i></button>
+    </div>
+    <div id="bot-trigger-small" onclick="window.location.href='about.html'">
+        <i class="bx bx-bot"></i>
+    </div>
+</body>
+</html>

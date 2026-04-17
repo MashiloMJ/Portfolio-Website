@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2 data-aos="zoom-in" data-aos-duration="1200">Mashilo's <span>Portfolio</span></h2>
+        </div>
+        <div class="link">
+            <ul>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><a href="index.html#bio">Bio</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><a href="about.html">About Me</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"><a href="skills.html">Skills</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800"><a href="projects.html">Projects</a></li>
+                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+     <section class="about">
+        <h2>About Me</h2>
+        <div class="bot-trigger" id="bot-trigger">
+            <i class="bx bx-bot"></i>
+            <p>Hi if you want to know about Mashilo ask me</p>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <span>AI Assistant</span>
+                <button id="close-chat">×</button>
+            </div>
+            <div id="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+        <p>I am a passionate software developer with a strong background in creating innovative solutions. I hold a Diploma in Software Development and have built a solid foundation in programming, problem-solving, and system design. I have further strengthened my skills through continuous learning on platforms such as FreeCodeCamp, Oracle, and Cisco, where I have been studying C#, Java, and Python.
+
+With expertise in various programming languages and frameworks, I strive to deliver high-quality code and collaborate effectively with teams to achieve outstanding results. My experience working in IT support has enhanced my technical troubleshooting abilities and attention to detail, allowing me to approach complex challenges with confidence.
+
+My journey in tech has equipped me with the skills to tackle real-world problems and contribute to meaningful projects. I am committed to continuous growth and am focused on becoming a skilled full-stack developer while building solutions that make a real impact.</p>
+    </section>
+    <footer class="site-footer">
+        <div class="weather-blocks">
+            <div class="weather-block" >
+                <i class="bx bx-current-location"></i>
+                <p id="weatherLocation">Detecting your location...</p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-cloud-lightning"></i>
+                <p id="weatherDescription"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-sun"></i>
+                <p id="weatherTemp"></p>
+            </div>
+            <div class="weather-block" >
+                <i class="bx bx-calendar"></i>
+                <p id="weatherDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+    <script src="bot.js"></script>
+    <script>
+        // Scroll buttons functionality
+        const scrollButtons = document.getElementById('scroll-buttons');
+        const scrollUp = document.getElementById('scroll-up');
+        const scrollDown = document.getElementById('scroll-down');
+
+        function toggleScrollButtons() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            if (scrollTop > 100) {
+                scrollButtons.classList.add('show');
+            } else {
+                scrollButtons.classList.remove('show');
+            }
+
+            // Hide down button if at bottom
+            if (scrollTop + windowHeight >= documentHeight - 100) {
+                scrollDown.style.opacity = '0.5';
+                scrollDown.style.pointerEvents = 'none';
+            } else {
+                scrollDown.style.opacity = '1';
+                scrollDown.style.pointerEvents = 'auto';
+            }
+
+            // Hide up button if at top
+            if (scrollTop < 100) {
+                scrollUp.style.opacity = '0.5';
+                scrollUp.style.pointerEvents = 'none';
+            } else {
+                scrollUp.style.opacity = '1';
+                scrollUp.style.pointerEvents = 'auto';
+            }
+        }
+
+        scrollUp.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        scrollDown.addEventListener('click', () => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', toggleScrollButtons);
+        window.addEventListener('load', toggleScrollButtons);
+    </script>
+    <div id="scroll-buttons">
+        <button id="scroll-up"><i class="bx bx-chevron-up"></i></button>
+        <button id="scroll-down"><i class="bx bx-chevron-down"></i></button>
+    </div>
+</body>
+</html>
