@@ -3,11 +3,39 @@ const weatherLocation = document.getElementById('weatherLocation');
 const weatherDescription = document.getElementById('weatherDescription');
 const weatherTemp = document.getElementById('weatherTemp');
 const weatherDate = document.getElementById('weatherDate');
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('nav .link');
+
+if (menuToggle && navLinks) {
+  const toggleMenu = () => {
+    const isOpen = navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.innerHTML = isOpen ? '<i class="bx bx-x"></i>' : '<i class="bx bx-menu"></i>';
+  };
+
+  menuToggle.addEventListener('click', toggleMenu);
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.innerHTML = '<i class="bx bx-menu"></i>';
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.innerHTML = '<i class="bx bx-menu"></i>';
+    }
+  });
+}
 
 if (downloadCvButton) {
   downloadCvButton.addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = 'files/cv.pdf';
+    link.href = './files/cv.pdf';
     link.download = 'cv.pdf';
     document.body.appendChild(link);
     link.click();

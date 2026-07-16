@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
     <nav>
         <div class="logo">
             <h2 data-aos="zoom-in" data-aos-duration="1200">Mashilo's <span>Portfolio</span></h2>
         </div>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="bx bx-menu"></i>
+        </button>
         <div class="link">
             <ul>
                 <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><a href="index.html#bio">Bio</a></li>
-                <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><a href="about.html">About Me</a></li>
+                <!--<li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><a href="about.html">About Me</a></li>-->
                 <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"><a href="skills.html">Skills</a></li>
                 <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800"><a href="projects.html">Projects</a></li>
                 <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000"><a href="contact.html">Contact Me</a></li>
@@ -29,138 +33,261 @@
         <div class="skill-category" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <h3>Languages</h3>
             <div class="skill-icons">
-                <div class="skill-item">
-                    <i class="bx bx-code" title="C#.NET: A versatile object-oriented programming language used for building robust web and desktop applications." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400"></i>
-                    <p>C#.NET</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-code-alt" title="Java: A high-level, class-based programming language designed for portability and performance." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="500"></i>
-                    <p>Java</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-terminal" title="PHP: A server-side scripting language primarily used for web development." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"></i>
-                    <p>PHP</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-bracket" title="JavaScript: A dynamic programming language for creating interactive web content." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="700"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-atom" title="React: A JavaScript library for building user interfaces, especially single-page applications." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="800"></i>
-                    <p>React</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-link" title="RESTful API: A set of rules for building web services that are scalable and maintainable." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="900"></i>
-                    <p>RESTful API</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-code-block" title="HTML: The standard markup language for creating web pages." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1000"></i>
-                    <p>HTML</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-python" title="Python: A high-level programming language known for its simplicity and readability." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1100"></i>
-                    <p>Python</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-palette" title="CSS: A style sheet language used for describing the presentation of a document." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"></i>
-                    <p>CSS</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-data" title="SQL Server: A relational database management system developed by Microsoft." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1300"></i>
-                    <p>SQL Server</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-code-curly" title="PL/SQL: A procedural language extension for SQL used in Oracle databases." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1400"></i>
-                    <p>PL/SQL</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-database" title="PostgreSQL: An advanced open-source relational database." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1500"></i>
-                    <p>PostgreSQL</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-c-plus-plus" title="C++: A general-purpose programming language with high performance." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1600"></i>
-                    <p>C++</p>
-                </div>
-            </div>
+
+    <div class="skill-item">
+        <i class="devicon-csharp-plain colored"
+           title="C#.NET: A versatile object-oriented programming language used for building robust web and desktop applications."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400"></i>
+        <p>C#.NET</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-java-plain colored"
+           title="Java: A high-level, class-based programming language designed for portability and performance."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="500"></i>
+        <p>Java</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-php-plain colored"
+           title="PHP: A server-side scripting language primarily used for web development."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"></i>
+        <p>PHP</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-javascript-plain colored"
+           title="JavaScript: A dynamic programming language for creating interactive web content."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="700"></i>
+        <p>JavaScript</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-react-original colored"
+           title="React: A JavaScript library for building modern user interfaces and single-page applications."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="800"></i>
+        <p>React</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="bx bx-transfer"
+           title="RESTful API: A standard architecture for building scalable and maintainable web services."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="900"></i>
+        <p>RESTful API</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-html5-plain colored"
+           title="HTML5: The standard markup language for creating web pages."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1000"></i>
+        <p>HTML5</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-css3-plain colored"
+           title="CSS3: A stylesheet language used for designing and styling web applications."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"></i>
+        <p>CSS3</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-microsoftsqlserver-plain colored"
+           title="SQL Server: A relational database management system developed by Microsoft."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1300"></i>
+        <p>SQL Server</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-oracle-original colored"
+           title="PL/SQL: Oracle's procedural extension of SQL used for database programming."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1400"></i>
+        <p>PL/SQL</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-postgresql-plain colored"
+           title="PostgreSQL: An advanced open-source relational database system."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1500"></i>
+        <p>PostgreSQL</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-cplusplus-plain colored"
+           title="C++: A high-performance general-purpose programming language."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1600"></i>
+        <p>C++</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-python-plain colored"
+           title="Python: A high-level programming language known for readability and versatility."
+           data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1100"></i>
+        <p>Python</p>
+    </div>
+
+</div>
         </div>
         <div class="skill-category" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
             <h3>Databases</h3>
             <div class="skill-icons">
-                <div class="skill-item">
-                    <i class="bx bx-data" title="MS SQL Server: Microsoft's relational database management system for enterprise applications." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"></i>
-                    <p>MS SQL Server</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-server" title="Oracle: A multi-model database management system known for scalability." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="700"></i>
-                    <p>Oracle</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-data" title="PHPMyAdmin: A free software tool for managing MySQL databases via web interface." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="800"></i>
-                    <p>PHPMyAdmin</p>
-                </div>
-            </div>
+
+    <div class="skill-item">
+        <i class="devicon-microsoftsqlserver-plain colored"
+           title="MS SQL Server: Microsoft's relational database management system for enterprise applications."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="600"></i>
+        <p>MS SQL Server</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-oracle-original colored"
+           title="Oracle Database: A multi-model database management system known for scalability and enterprise applications."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="700"></i>
+        <p>Oracle</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-mysql-plain colored"
+           title="PHPMyAdmin: A web-based administration tool for managing MySQL databases."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="800"></i>
+        <p>PHPMyAdmin</p>
+    </div>
+
+</div>
         </div>
         <div class="skill-category" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
             <h3>Frameworks & Tools</h3>
             <div class="skill-icons">
-                <div class="skill-item">
-                    <i class="bx bx-code" title="ASP.NET MVC: A web application framework for building dynamic websites." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="800"></i>
-                    <p>ASP.NET MVC</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-server" title="NodeJS: A JavaScript runtime for server-side development." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="900"></i>
-                    <p>NodeJS</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-layout" title="Bootstrap: A CSS framework for responsive web design." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1000"></i>
-                    <p>Bootstrap</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-git-branch" title="Git: A distributed version control system for tracking changes." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1100"></i>
-                    <p>Git</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bxl-github" title="GitHub: A platform for hosting and collaborating on Git repositories." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"></i>
-                    <p>GitHub</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-code-alt" title="Visual Studio: An integrated development environment for coding." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1300"></i>
-                    <p>Visual Studio</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-server" title="XAMPP: A free and open-source cross-platform web server solution." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1400"></i>
-                    <p>XAMPP</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-code-block" title="VS Code: A lightweight code editor with built-in support for debugging." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1500"></i>
-                    <p>VS Code</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-globe" title="WordPress: A content management system for building websites." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1600"></i>
-                    <p>WordPress</p>
-                </div>
-            </div>
+
+    <div class="skill-item">
+        <i class="devicon-dot-net-plain colored"
+           title="ASP.NET MVC: A Microsoft web application framework for building dynamic web applications."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="800"></i>
+        <p>ASP.NET MVC</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-nodejs-plain colored"
+           title="Node.js: A JavaScript runtime environment for server-side development."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="900"></i>
+        <p>NodeJS</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-bootstrap-plain colored"
+           title="Bootstrap: A CSS framework for building responsive web interfaces."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1000"></i>
+        <p>Bootstrap</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-git-plain colored"
+           title="Git: A distributed version control system for tracking source code changes."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1100"></i>
+        <p>Git</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-github-original"
+           title="GitHub: A platform for hosting repositories and collaborating on software projects."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1200"></i>
+        <p>GitHub</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-visualstudio-plain colored"
+           title="Visual Studio: An integrated development environment for building software applications."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1300"></i>
+        <p>Visual Studio</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="bx bx-server"
+           title="XAMPP: A local development environment containing Apache, MySQL, PHP, and Perl."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1400"></i>
+        <p>XAMPP</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-vscode-plain colored"
+           title="VS Code: A lightweight source-code editor used for software development."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1500"></i>
+        <p>VS Code</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="devicon-wordpress-plain colored"
+           title="WordPress: A content management system for creating and managing websites."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1600"></i>
+        <p>WordPress</p>
+    </div>
+
+</div>
         </div>
         <div class="skill-category" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
             <h3>Others</h3>
             <div class="skill-icons">
-                <div class="skill-item">
-                    <i class="bx bx-group" title="Agile Practices: Methodologies for flexible and iterative project management." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1000"></i>
-                    <p>Agile Practices</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-bug" title="Debugging: The process of identifying and removing errors from software." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1100"></i>
-                    <p>Debugging</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-check-circle" title="Testing: Verifying software functionality and performance." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"></i>
-                    <p>Testing</p>
-                </div>
-                <div class="skill-item">
-                    <i class="bx bx-support" title="End-User Support: Providing assistance and solutions to users." data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1300"></i>
-                    <p>End-User Support</p>
-                </div>
-            </div>
+
+    <div class="skill-item">
+        <i class="bx bx-group"
+           title="Agile Practices: Methodologies for flexible, iterative, and collaborative software development."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1000"></i>
+        <p>Agile Practices</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="bx bx-bug"
+           title="Debugging: The process of identifying, analysing, and fixing software errors."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1100"></i>
+        <p>Debugging</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="bx bx-check-circle"
+           title="Software Testing: Verifying software functionality, reliability, and performance."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1200"></i>
+        <p>Testing</p>
+    </div>
+
+    <div class="skill-item">
+        <i class="bx bx-support"
+           title="End-User Support: Providing technical assistance and resolving user issues."
+           data-aos="zoom-in"
+           data-aos-duration="1200"
+           data-aos-delay="1300"></i>
+        <p>End-User Support</p>
+    </div>
+
+</div>
         </div>
     </section>
     <footer class="site-footer">

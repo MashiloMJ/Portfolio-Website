@@ -1,9 +1,18 @@
 const chatInput = document.getElementById('chat-input');
 const chatSend = document.getElementById('chat-send');
 const chatMessages = document.getElementById('chat-messages');
-const botTrigger = document.getElementById('bot-trigger');
+const botTrigger = document.getElementById('bot-trigger-small');
 const chatWindow = document.getElementById('chat-window');
 const closeChat = document.getElementById('close-chat');
+
+console.log({
+    chatInput,
+    chatSend,
+    chatMessages,
+    botTrigger,
+    chatWindow,
+    closeChat
+});
 
 let chatState = 'greeting';
 let userName = '';
